@@ -34,6 +34,9 @@
 </#list>
         ${table.fieldNames}
     </sql>
-
 </#if>
+    <!-- 校验${table.comment!?substring(0,2)}名是否唯一 -->
+    <select id="check${entity}Name" parameterType="String" resultType="int">
+        select count(1) from sys_${entity[3..6]?uncap_first} where ${entity[3..6]?uncap_first}Name=${entity[3..6]?uncap_first}Name
+    </select>
 </mapper>
