@@ -6,4 +6,5 @@
     <select id="checkUserName" parameterType="String" resultType="int">
         select count(1) from sys_user where username=#{username}
     </select>
+
 </mapper>

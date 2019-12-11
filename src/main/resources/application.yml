@@ -32,7 +32,7 @@ spring:
 # 关闭安全验证
 management:
   security:
-    enabled: true
+    enabled: false
 
 # mybatis-plus相关配置
 mybatis-plus:
@@ -70,6 +70,9 @@ mybatis-plus:
     # 解决oracle更新数据为null时无法转换报错，mysql不会出现此情况
     jdbc-type-for-null: 'null'
 
+logging:
+  level:
+    com.tianxing.system.mapper: debug
 
 tianxing:
   swagger:
