@@ -3,11 +3,11 @@ package com.tianxing.system.controller;
 
 import com.baomidou.mybatisplus.core.toolkit.Wrappers;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
+import com.tianxing.common.utils.CheckInformation;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.ResponseBody;
 import com.tianxing.common.enumeration.ApiResult;
-import com.tianxing.common.utils.Constants;
 import com.tianxing.common.utils.DateUtils;
 import com.tianxing.system.entity.SysRole;
 import com.tianxing.system.service.ISysRoleService;
@@ -55,7 +55,7 @@ public class SysRoleController extends BaseController {
         sysRole.setCreateTime(DateUtils.getNowDate());
 
         //校验角色名是否唯一
-        if (Constants.ROLE_NAME_NOT_UNIQUE.equals(iSysRoleService.checkSysRoleName(sysRole.getRoleName()))){
+        if (CheckInformation.ROLE_NAME_NOT_UNIQUE.equals(iSysRoleService.checkSysRoleName(sysRole.getRoleName()))){
         return new ApiResult("新增角色"+sysRole.getRoleName()+"失败,角色名已存在");
         }
 
@@ -77,7 +77,7 @@ public class SysRoleController extends BaseController {
         sysRole.setUpdateTime(DateUtils.getNowDate());
 
         //校验角色名是否唯一
-        if (Constants.ROLE_NAME_NOT_UNIQUE.equals(iSysRoleService.checkSysRoleName(sysRole.getRoleName()))){
+        if (CheckInformation.ROLE_NAME_NOT_UNIQUE.equals(iSysRoleService.checkSysRoleName(sysRole.getRoleName()))){
         return new ApiResult("修改角色"+sysRole.getRoleName()+"失败,角色名已存在");
         }
 

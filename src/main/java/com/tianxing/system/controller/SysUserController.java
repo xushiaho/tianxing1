@@ -3,11 +3,11 @@ package com.tianxing.system.controller;
 
 import com.baomidou.mybatisplus.core.toolkit.Wrappers;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
+import com.tianxing.common.utils.CheckInformation;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.ResponseBody;
 import com.tianxing.common.enumeration.ApiResult;
-import com.tianxing.common.utils.Constants;
 import com.tianxing.common.utils.DateUtils;
 import com.tianxing.system.entity.SysUser;
 import com.tianxing.system.service.ISysUserService;
@@ -55,7 +55,7 @@ public class SysUserController extends BaseController {
         sysUser.setCreateTime(DateUtils.getNowDate());
 
         //校验用户名是否唯一
-        if (Constants.USER_NAME_NOT_UNIQUE.equals(iSysUserService.checkSysUserName(sysUser.getUsername()))){
+        if (CheckInformation.USER_NAME_NOT_UNIQUE.equals(iSysUserService.checkSysUserName(sysUser.getUsername()))){
         return new ApiResult("新增用户"+sysUser.getUsername()+"失败,用户名已存在");
         }
 
@@ -77,7 +77,7 @@ public class SysUserController extends BaseController {
         sysUser.setUpdateTime(DateUtils.getNowDate());
 
         //校验用户名是否唯一
-        if (Constants.USER_NAME_NOT_UNIQUE.equals(iSysUserService.checkSysUserName(sysUser.getUsername()))){
+        if (CheckInformation.USER_NAME_NOT_UNIQUE.equals(iSysUserService.checkSysUserName(sysUser.getUsername()))){
         return new ApiResult("修改用户"+sysUser.getUsername()+"失败,用户名已存在");
         }
 

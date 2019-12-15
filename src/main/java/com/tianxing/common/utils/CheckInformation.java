@@ -1,15 +1,15 @@
 package com.tianxing.common.utils;
 
 /**
- * 常量信息
+ * <p> 校验信息 </p>
  *
- * @program: api_doc
+ * @program: tianxing
  * @author: 许仕昊
- * @create: 2019-11-05 23:15
+ * @create: 2019-12-15 23:40
  **/
 
-public class Constants {
 
+public class CheckInformation {
     /**
      * 用户名称是否唯一返回结果
      */

@@ -25,8 +25,8 @@ public class Constants {
     /**
      * 密码加密相关
      */
-//    public static String SALT = "zhengqing";
-//    public static final int HASH_ITERATIONS = 1;
+    public static String SALT = "tianxing";
+    public static final int HASH_ITERATIONS = 1;
 
     /**
      * 请求头 - token

@@ -1,6 +1,5 @@
 package com.tianxing.system.service.impl;
 
-import com.tianxing.common.utils.Constants;
 import com.tianxing.system.entity.SysUser;
 import com.tianxing.system.mapper.SysUserMapper;
 import com.tianxing.system.service.ISysUserService;

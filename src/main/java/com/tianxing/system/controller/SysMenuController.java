@@ -3,11 +3,11 @@ package com.tianxing.system.controller;
 
 import com.baomidou.mybatisplus.core.toolkit.Wrappers;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
+import com.tianxing.common.utils.CheckInformation;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.ResponseBody;
 import com.tianxing.common.enumeration.ApiResult;
-import com.tianxing.common.utils.Constants;
 import com.tianxing.common.utils.DateUtils;
 import com.tianxing.system.entity.SysMenu;
 import com.tianxing.system.service.ISysMenuService;
@@ -55,7 +55,7 @@ public class SysMenuController extends BaseController {
         sysMenu.setCreateTime(DateUtils.getNowDate());
 
         //校验菜单名是否唯一
-        if (Constants.MENU_NAME_NOT_UNIQUE.equals(iSysMenuService.checkSysMenuName(sysMenu.getMenuName()))){
+        if (CheckInformation.MENU_NAME_NOT_UNIQUE.equals(iSysMenuService.checkSysMenuName(sysMenu.getMenuName()))){
         return new ApiResult("新增菜单"+sysMenu.getMenuName()+"失败,菜单名已存在");
         }
 
@@ -77,7 +77,7 @@ public class SysMenuController extends BaseController {
         sysMenu.setUpdateTime(DateUtils.getNowDate());
 
         //校验菜单名是否唯一
-        if (Constants.MENU_NAME_NOT_UNIQUE.equals(iSysMenuService.checkSysMenuName(sysMenu.getMenuName()))){
+        if (CheckInformation.MENU_NAME_NOT_UNIQUE.equals(iSysMenuService.checkSysMenuName(sysMenu.getMenuName()))){
         return new ApiResult("修改菜单"+sysMenu.getMenuName()+"失败,菜单名已存在");
         }
 

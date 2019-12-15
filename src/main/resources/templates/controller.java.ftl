@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.ResponseBody;
 import com.tianxing.common.enumeration.ApiResult;
-import com.tianxing.common.utils.Constants;
+import com.tianxing.common.utils.CheckInformation;
 import com.tianxing.common.utils.DateUtils;
 import ${package.Entity}.${entity};
 import ${package.Service}.${table.serviceName};
@@ -72,7 +72,7 @@ public class ${table.controllerName} {
         ${entity?uncap_first}.setCreateTime(DateUtils.getNowDate());
 
         //校验${table.comment!?substring(0,2)}名是否唯一
-        if (Constants.${entity[3..6]?upper_case}_NAME_NOT_UNIQUE.equals(${table.serviceName?uncap_first}.check${entity}Name(${entity?uncap_first}.${"get${entity[3..6]}Name"}()))){
+        if (CheckInformation.${entity[3..6]?upper_case}_NAME_NOT_UNIQUE.equals(${table.serviceName?uncap_first}.check${entity}Name(${entity?uncap_first}.${"get${entity[3..6]}Name"}()))){
         return new ApiResult("新增${table.comment!?substring(0,2)}"+${entity?uncap_first}.${"get${entity[3..6]}Name"}()+"失败,${table.comment!?substring(0,2)}名已存在");
         }
 
@@ -94,7 +94,7 @@ public class ${table.controllerName} {
         ${entity?uncap_first}.setUpdateTime(DateUtils.getNowDate());
 
         //校验${table.comment!?substring(0,2)}名是否唯一
-        if (Constants.${entity[3..6]?upper_case}_NAME_NOT_UNIQUE.equals(${table.serviceName?uncap_first}.check${entity}Name(${entity?uncap_first}.${"get${entity[3..6]}Name"}()))){
+        if (CheckInformation.${entity[3..6]?upper_case}_NAME_NOT_UNIQUE.equals(${table.serviceName?uncap_first}.check${entity}Name(${entity?uncap_first}.${"get${entity[3..6]}Name"}()))){
         return new ApiResult("修改${table.comment!?substring(0,2)}"+${entity?uncap_first}.${"get${entity[3..6]}Name"}()+"失败,${table.comment!?substring(0,2)}名已存在");
         }
 

@@ -2,12 +2,33 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="393cb8f1-1628-4c2b-a5d7-f4a575165f19" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/tianxing/common/utils/CheckInformation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/tianxing/common/utils/PasswordUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/tianxing/config/security/login/AdminAuthenticationEntryPoint.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/tianxing/config/security/login/AdminAuthenticationFailureHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/tianxing/config/security/login/AdminAuthenticationProvider.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tianxing/common/utils/Constants.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tianxing/config/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tianxing/config/Constants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tianxing/system/controller/SysMenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tianxing/system/controller/SysMenuController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tianxing/system/controller/SysRoleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tianxing/system/controller/SysRoleController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tianxing/system/controller/SysUserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tianxing/system/controller/SysUserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tianxing/system/service/impl/SysMenuServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tianxing/system/service/impl/SysMenuServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tianxing/system/service/impl/SysRoleServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tianxing/system/service/impl/SysRoleServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tianxing/system/service/impl/SysUserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tianxing/system/service/impl/SysUserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/controller.java.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/controller.java.ftl" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -21,13 +42,19 @@
     </option>
   </component>
   <component name="ProjectId" id="1V0Q4oo0dz9P3o11zEU5ghzOR8z" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
@@ -38,7 +65,13 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.selected.configurable" value="fileTemplates" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\git\tianxing\src\main\java\com\tianxing\config" />
+      <recent name="E:\git\tianxing\src\main\java\com\tianxing\config\security" />
+    </key>
   </component>
   <component name="RestServicesNavigator">
     <treeState>
@@ -78,7 +111,9 @@
       <option name="presentableId" value="Default" />
       <updated>1576387343907</updated>
       <workItem from="1576387349552" duration="162000" />
-      <workItem from="1576387556689" duration="3922000" />
+      <workItem from="1576387556689" duration="4247000" />
+      <workItem from="1576406544728" duration="358000" />
+      <workItem from="1576421523383" duration="3185000" />
     </task>
     <task id="LOCAL-00001" summary="第一层次">
       <created>1576399585523</created>
@@ -87,7 +122,21 @@
       <option name="project" value="LOCAL" />
       <updated>1576399585523</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="第一层次">
+      <created>1576400447410</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1576400447410</updated>
+    </task>
+    <task id="LOCAL-00003" summary="第一层次">
+      <created>1576400513471</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1576400513471</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -98,7 +147,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
@@ -109,22 +160,62 @@
     <option name="LAST_COMMIT_MESSAGE" value="第一层次" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="918" y="188" key="CommitChangelistDialog2" timestamp="1576400446020">
+    <state x="1245" y="228" key="#com.intellij.ide.util.MemberChooser" timestamp="1576424694812">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="918" y="188" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1576400446020" />
+    <state x="1245" y="228" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1576424694812" />
+    <state x="1170" y="269" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1576424457267">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1170" y="269" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1576424457267" />
+    <state x="918" y="188" key="CommitChangelistDialog2" timestamp="1576400512337">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="918" y="188" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1576400512337" />
     <state x="1203" y="277" key="FileChooserDialogImpl" timestamp="1576400022359">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1203" y="277" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1576400022359" />
-    <state x="926" y="164" key="SettingsEditor" timestamp="1576400035165">
+    <state width="914" height="279" key="GridCell.Tab.0.bottom" timestamp="1576400706910">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="926" y="164" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1576400035165" />
-    <state x="1032" y="255" key="Vcs.Push.Dialog.v2" timestamp="1576400449015">
+    <state width="914" height="279" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1576400706910" />
+    <state width="914" height="279" key="GridCell.Tab.0.center" timestamp="1576400706910">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1032" y="255" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1576400449015" />
+    <state width="914" height="279" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1576400706910" />
+    <state width="914" height="279" key="GridCell.Tab.0.left" timestamp="1576400706910">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="914" height="279" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1576400706910" />
+    <state width="914" height="279" key="GridCell.Tab.0.right" timestamp="1576400706910">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="914" height="279" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1576400706910" />
+    <state width="914" height="279" key="GridCell.Tab.1.bottom" timestamp="1576400706910">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="914" height="279" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1576400706910" />
+    <state width="914" height="279" key="GridCell.Tab.1.center" timestamp="1576400706910">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="914" height="279" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1576400706910" />
+    <state width="914" height="279" key="GridCell.Tab.1.left" timestamp="1576400706910">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="914" height="279" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1576400706910" />
+    <state width="914" height="279" key="GridCell.Tab.1.right" timestamp="1576400706910">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="914" height="279" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1576400706910" />
+    <state x="926" y="164" key="SettingsEditor" timestamp="1576423823453">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="926" y="164" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1576423823453" />
+    <state x="1032" y="255" key="Vcs.Push.Dialog.v2" timestamp="1576400515254">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1032" y="255" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1576400515254" />
     <state x="1234" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1576399528131">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

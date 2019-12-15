@@ -1,6 +1,5 @@
 package com.tianxing.system.service.impl;
 
-import com.tianxing.common.utils.Constants;
 import com.tianxing.system.entity.SysMenu;
 import com.tianxing.system.mapper.SysMenuMapper;
 import com.tianxing.system.service.ISysMenuService;
