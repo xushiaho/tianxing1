@@ -2,18 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="393cb8f1-1628-4c2b-a5d7-f4a575165f19" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/tianxing/common/utils/MultiReadHttpServletRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/tianxing/common/utils/MultiReadHttpServletResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/tianxing/config/security/filter/AdminAuthenticationProcessingFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/tianxing/config/security/filter/MyAuthenticationFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/tianxing/config/security/login/AdminAuthenticationSuccessHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/tianxing/config/security/login/CusAuthenticationManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tianxing/common/utils/PasswordUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tianxing/common/utils/PasswordUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tianxing/config/security/login/AdminAuthenticationProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tianxing/config/security/login/AdminAuthenticationProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tianxing/config/security/filter/MyAuthenticationFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tianxing/config/security/filter/MyAuthenticationFilter.java" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -61,7 +52,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="settings.editor.selected.configurable" value="fileTemplates" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -75,18 +66,6 @@
       <select />
     </treeState>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
   <component name="RunManager">
     <configuration name="TianxingApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="tianxing" />
@@ -95,6 +74,18 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -110,8 +101,11 @@
       <workItem from="1576387556689" duration="4247000" />
       <workItem from="1576406544728" duration="358000" />
       <workItem from="1576421523383" duration="3185000" />
-      <workItem from="1576461227560" duration="1586000" />
-      <workItem from="1576462983444" duration="5382000" />
+      <workItem from="1576500513999" duration="11000" />
+      <workItem from="1576508931118" duration="688000" />
+      <workItem from="1576509849568" duration="120000" />
+      <workItem from="1576509991155" duration="1961000" />
+      <workItem from="1576512809937" duration="1578000" />
     </task>
     <task id="LOCAL-00001" summary="第一层次">
       <created>1576399585523</created>
@@ -158,6 +152,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="第一层次" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="1199" y="391" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog" timestamp="1576509968573">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1199" y="391" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1576509968573" />
     <state x="1245" y="228" key="#com.intellij.ide.util.MemberChooser" timestamp="1576424694812">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -170,10 +168,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="918" y="188" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1576400512337" />
-    <state x="1203" y="277" key="FileChooserDialogImpl" timestamp="1576400022359">
+    <state x="1203" y="277" key="FileChooserDialogImpl" timestamp="1576509960939">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1203" y="277" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1576400022359" />
+    <state x="1203" y="277" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1576509960939" />
     <state width="914" height="279" key="GridCell.Tab.0.bottom" timestamp="1576400706910">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -214,9 +212,13 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1032" y="255" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1576400515254" />
-    <state x="1234" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1576399528131">
+    <state x="1234" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1576514452305">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1234" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1576399528131" />
+    <state x="1234" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1576514452305" />
+    <state x="1143" y="152" key="refactoring.ChangeSignatureDialog" timestamp="1576514117345">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1143" y="152" key="refactoring.ChangeSignatureDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1576514117345" />
   </component>
 </project>
