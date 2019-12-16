@@ -36,7 +36,7 @@ public class PasswordUtils {
      * @param salt：盐值
      * @return
      */
-    private static String encodePassword(String password, String salt) {
+    public static String encodePassword(String password, String salt) {
         String encodedPassword;
         try {
             MessageDigest digest = MessageDigest.getInstance("SHA-1");
