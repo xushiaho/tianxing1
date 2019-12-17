@@ -51,7 +51,7 @@ public class ${table.controllerName} {
     * 查询${table.comment!?substring(0,2)}列表
     * @return
     */
-    @RequestMapping("list")
+    @RequestMapping(value = "list", produces = "application/json;charset=utf-8")
     @ResponseBody
     public ApiResult list(){
         Page< ${entity}> page = new Page< ${entity}>();
@@ -64,7 +64,7 @@ public class ${table.controllerName} {
     * @param ${entity?uncap_first}
     * @return
     */
-    @RequestMapping("add")
+    @RequestMapping(value = "add", produces = "application/json;charset=utf-8")
     @ResponseBody
     public ApiResult add ( ${entity}  ${entity?uncap_first}){
 
@@ -86,7 +86,7 @@ public class ${table.controllerName} {
     * @param ${entity?uncap_first}
     * @return
     */
-    @RequestMapping("update" )
+    @RequestMapping(value = "update", produces = "application/json;charset=utf-8")
     @ResponseBody
     public ApiResult update(${entity}  ${entity?uncap_first}){
 
@@ -108,7 +108,7 @@ public class ${table.controllerName} {
     * @param ${entity?uncap_first}Ids
     * @return
     */
-    @RequestMapping("deletes/{${entity?uncap_first}Id}")
+    @RequestMapping(value = "deletes/{${entity?uncap_first}Id}", produces = "application/json;charset=utf-8")
     @ResponseBody
     public ApiResult deletes(@PathVariable("${entity?uncap_first}Id") String[] ${entity?uncap_first}Ids){
         ${table.serviceName?uncap_first}.removeByIds(Arrays.asList(${entity?uncap_first}Ids));

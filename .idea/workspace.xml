@@ -2,8 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="393cb8f1-1628-4c2b-a5d7-f4a575165f19" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/tianxing/config/security/url/UrlAccessDecisionManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/tianxing/config/security/url/UrlAccessDeniedHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/tianxing/config/security/url/UrlFilterInvocationSecurityMetadataSource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/tianxing/system/controller/IndexController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tianxing/config/security/filter/MyAuthenticationFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tianxing/config/security/filter/MyAuthenticationFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tianxing/common/controller/BaseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tianxing/common/controller/BaseController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/controller.java.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/controller.java.ftl" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,7 +110,8 @@
       <workItem from="1576508931118" duration="688000" />
       <workItem from="1576509849568" duration="120000" />
       <workItem from="1576509991155" duration="1961000" />
-      <workItem from="1576512809937" duration="1578000" />
+      <workItem from="1576512809937" duration="1745000" />
+      <workItem from="1576597766490" duration="3941000" />
     </task>
     <task id="LOCAL-00001" summary="第一层次">
       <created>1576399585523</created>
@@ -128,7 +134,14 @@
       <option name="project" value="LOCAL" />
       <updated>1576400513471</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="第四次提交">
+      <created>1576514483446</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1576514483446</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -149,25 +162,26 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="第一层次" />
-    <option name="LAST_COMMIT_MESSAGE" value="第一层次" />
+    <MESSAGE value="第四次提交" />
+    <option name="LAST_COMMIT_MESSAGE" value="第四次提交" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1199" y="391" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog" timestamp="1576509968573">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1199" y="391" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1576509968573" />
-    <state x="1245" y="228" key="#com.intellij.ide.util.MemberChooser" timestamp="1576424694812">
+    <state x="1245" y="228" key="#com.intellij.ide.util.MemberChooser" timestamp="1576599051360">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1245" y="228" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1576424694812" />
+    <state x="1245" y="228" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1576599051360" />
     <state x="1170" y="269" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1576424457267">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1170" y="269" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1576424457267" />
-    <state x="918" y="188" key="CommitChangelistDialog2" timestamp="1576400512337">
+    <state x="918" y="188" key="CommitChangelistDialog2" timestamp="1576514481588">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="918" y="188" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1576400512337" />
+    <state x="918" y="188" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1576514481588" />
     <state x="1203" y="277" key="FileChooserDialogImpl" timestamp="1576509960939">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -208,14 +222,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="926" y="164" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1576423823453" />
-    <state x="1032" y="255" key="Vcs.Push.Dialog.v2" timestamp="1576400515254">
+    <state x="1032" y="255" key="Vcs.Push.Dialog.v2" timestamp="1576514486256">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1032" y="255" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1576400515254" />
-    <state x="1234" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1576514452305">
+    <state x="1032" y="255" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1576514486256" />
+    <state x="1234" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1576597783920">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1234" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1576514452305" />
+    <state x="1234" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1576597783920" />
     <state x="1143" y="152" key="refactoring.ChangeSignatureDialog" timestamp="1576514117345">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
