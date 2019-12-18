@@ -1,5 +1,6 @@
 package com.tianxing.system.service.impl;
 
+import com.tianxing.common.utils.CheckInformation;
 import com.tianxing.system.entity.SysRole;
 import com.tianxing.system.mapper.SysRoleMapper;
 import com.tianxing.system.service.ISysRoleService;
@@ -30,9 +31,9 @@ public class SysRoleServiceImpl extends ServiceImpl<SysRoleMapper, SysRole> impl
     public String checkSysRoleName(String roleName) {
         int count = sysRoleMapper.checkSysRoleName(roleName);
         if (count > 0){
-            return Constants.ROLE_NAME_NOT_UNIQUE;
+            return CheckInformation.ROLE_NAME_NOT_UNIQUE;
         }
-        return Constants.ROLE_NAME_UNIQUE;
+        return CheckInformation.ROLE_NAME_UNIQUE;
     }
 
 }

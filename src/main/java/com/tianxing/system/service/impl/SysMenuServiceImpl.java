@@ -1,5 +1,6 @@
 package com.tianxing.system.service.impl;
 
+import com.tianxing.common.utils.CheckInformation;
 import com.tianxing.system.entity.SysMenu;
 import com.tianxing.system.mapper.SysMenuMapper;
 import com.tianxing.system.service.ISysMenuService;
@@ -30,9 +31,9 @@ public class SysMenuServiceImpl extends ServiceImpl<SysMenuMapper, SysMenu> impl
     public String checkSysMenuName(String menuName) {
         int count = sysMenuMapper.checkSysMenuName(menuName);
         if (count > 0){
-            return Constants.MENU_NAME_NOT_UNIQUE;
+            return CheckInformation.MENU_NAME_NOT_UNIQUE;
         }
-        return Constants.MENU_NAME_UNIQUE;
+        return CheckInformation.MENU_NAME_UNIQUE;
     }
 
 }

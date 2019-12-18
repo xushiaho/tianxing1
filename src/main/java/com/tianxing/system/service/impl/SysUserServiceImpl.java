@@ -1,5 +1,6 @@
 package com.tianxing.system.service.impl;
 
+import com.tianxing.common.utils.CheckInformation;
 import com.tianxing.system.entity.SysUser;
 import com.tianxing.system.mapper.SysUserMapper;
 import com.tianxing.system.service.ISysUserService;
@@ -30,9 +31,9 @@ public class SysUserServiceImpl extends ServiceImpl<SysUserMapper, SysUser> impl
     public String checkSysUserName(String userName) {
         int count = sysUserMapper.checkSysUserName(userName);
         if (count > 0){
-            return Constants.USER_NAME_NOT_UNIQUE;
+            return CheckInformation.USER_NAME_NOT_UNIQUE;
         }
-        return Constants.USER_NAME_UNIQUE;
+        return CheckInformation.USER_NAME_UNIQUE;
     }
 
 }

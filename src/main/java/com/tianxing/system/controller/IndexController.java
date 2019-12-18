@@ -17,8 +17,8 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class IndexController extends BaseController {
 
-    @RequestMapping(value = "/login", produces = "application/json;charset=utf-8")
-    public ApiResult login(){
-        return ApiResult.ok("登录系统成功", null);
-    }
+//    @RequestMapping(value = "/login", produces = "application/json;charset=utf-8")
+//    public ApiResult login(){
+//        return ApiResult.ok("登录系统成功", null);
+//    }
 }

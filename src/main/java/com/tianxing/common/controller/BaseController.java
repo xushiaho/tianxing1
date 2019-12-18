@@ -19,8 +19,8 @@ public class BaseController {
      * @param moduleName
      * @return
      */
-    @RequestMapping("{moduleName}")
-    public String moduleName(@PathVariable String moduleName){
-        return moduleName;
-    }
+//    @RequestMapping("{moduleName}")
+//    public String moduleName(@PathVariable String moduleName){
+//        return moduleName;
+//    }
 }
