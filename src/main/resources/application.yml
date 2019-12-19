@@ -29,6 +29,10 @@ spring:
     poolPreparedStatements: true
     maxOpenPreparedStatements: 20
 
+  thymeleaf:
+    prefix: classpath:/templates
+    suffix: .html
+
 # 关闭安全验证
 management:
   security:
