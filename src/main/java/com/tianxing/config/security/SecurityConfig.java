@@ -104,7 +104,8 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         http.sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS);
 
         // 允许匿名的url - 可理解为放行接口 - 除配置文件忽略url以外，其它所有请求都需经过认证和授权
-        expressionInterceptUrlRegistry.antMatchers("/login","/system/sysUser/add").permitAll();
+        //expressionInterceptUrlRegistry.antMatchers("/login","/system/sysUser/add").permitAll();
+        expressionInterceptUrlRegistry.antMatchers("/system/sysUser/**").permitAll();
 //        for (String url :  myProperties.getAuth().getIgnoreUrls()) {
 //            expressionInterceptUrlRegistry.antMatchers(url).permitAll();
 //        }

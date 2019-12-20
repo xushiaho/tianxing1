@@ -20,12 +20,12 @@ import org.springframework.web.servlet.ModelAndView;
 @Controller
 public class IndexController extends BaseController {
 
-    @RequestMapping(value = "/login", produces = "application/json;charset=utf-8")
+    // @RequestMapping(value = "/login", produces = "application/json;charset=utf-8")
     //@ResponseBody
 //    public ApiResult login(){
 //        return ApiResult.ok("登录系统成功", null);
 //    }
-    public String login(){
-        return "login";
-    }
+//    public String login(){
+//        return "login";
+//    }
 }

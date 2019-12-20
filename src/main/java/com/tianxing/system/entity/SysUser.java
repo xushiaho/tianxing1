@@ -36,18 +36,6 @@ public class SysUser extends BaseEntity {
     @ApiModelProperty(value = "密码")
     private String password;
 
-    @ApiModelProperty(value = "用户姓名")
-    private String userName;
-
-    @ApiModelProperty(value = "年龄")
-    private String sex;
-
-    @ApiModelProperty(value = "手机号")
-    private String phone;
-
-    @ApiModelProperty(value = "邮箱")
-    private String email;
-
     @ApiModelProperty(value = "头像")
     private String avatar;
 

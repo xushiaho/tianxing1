@@ -1,6 +1,6 @@
 package ${package.ServiceImpl};
 
-import com.tianxing.common.utils.Constants;
+import com.tianxing.common.utils.CheckInformation;
 import ${package.Entity}.${entity};
 import ${package.Mapper}.${table.mapperName};
 import ${package.Service}.${table.serviceName};
@@ -36,9 +36,9 @@ public class ${table.serviceImplName} extends ${superServiceImplClass}<${table.m
     public String check${entity}Name(String ${entity[3..6]?uncap_first}Name) {
         int count = ${table.mapperName?uncap_first}.check${entity}Name(${entity[3..6]?uncap_first}Name);
         if (count > 0){
-            return Constants.${entity[3..6]?upper_case}_NAME_NOT_UNIQUE;
+            return CheckInformation.${entity[3..6]?upper_case}_NAME_NOT_UNIQUE;
         }
-        return Constants.${entity[3..6]?upper_case}_NAME_UNIQUE;
+        return CheckInformation.${entity[3..6]?upper_case}_NAME_UNIQUE;
     }
 
 }

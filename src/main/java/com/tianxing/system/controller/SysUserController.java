@@ -4,6 +4,7 @@ package com.tianxing.system.controller;
 import com.baomidou.mybatisplus.core.toolkit.Wrappers;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.tianxing.common.utils.CheckInformation;
+import com.tianxing.common.utils.PasswordUtils;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -47,7 +48,7 @@ public class SysUserController extends BaseController {
     * @param sysUser
     * @return
     */
-    @RequestMapping("add")
+    @RequestMapping(value = "add", produces = "application/json;charset=utf-8")
     @ResponseBody
     public ApiResult add ( SysUser  sysUser){
 

@@ -7,34 +7,33 @@
     <cache type="org.mybatis.caches.ehcache.LoggingEhcache"/>
 
 </#if>
-<#if baseResultMap>
     <!-- 通用查询映射结果 -->
     <resultMap id="BaseResultMap" type="${package.Entity}.${entity}">
-<#list table.fields as field>
-<#if field.keyFlag><#--生成主键排在第一位-->
-        <id column="${field.name}" property="${field.propertyName}" />
-</#if>
-</#list>
-<#list table.commonFields as field><#--生成公共字段 -->
-    <result column="${field.name}" property="${field.propertyName}" />
-</#list>
-<#list table.fields as field>
-<#if !field.keyFlag><#--生成普通字段 -->
-        <result column="${field.name}" property="${field.propertyName}" />
-</#if>
-</#list>
+        <#list table.fields as field>
+            <#if field.keyFlag><#--生成主键排在第一位-->
+                <id column="${field.name}"      property="${field.propertyName}"        />
+            </#if>
+        </#list>
+        <#list table.commonFields as field><#--生成公共字段 -->
+            <result column="${field.name}"      property="${field.propertyName}"     />
+        </#list>
+        <#list table.fields as field>
+            <#if !field.keyFlag><#--生成普通字段 -->
+                <result column="${field.name}"      property="${field.propertyName}"    />
+            </#if>
+        </#list>
     </resultMap>
 
-</#if>
-<#if baseColumnList>
     <!-- 通用查询结果列 -->
-    <sql id="Base_Column_List">
-<#list table.commonFields as field>
+    <sql id="select${entity}Vo">
+        select
+        <#list table.commonFields as field>
         ${field.name},
-</#list>
-        ${table.fieldNames}
+        </#list>
+        ${table.fieldNames} from ${table.entityPath}
     </sql>
-</#if>
+
+
     <!-- 校验${table.comment!?substring(0,2)}名是否唯一 -->
     <select id="check${entity}Name" parameterType="String" resultType="int">
         select count(1) from sys_${entity[3..6]?uncap_first} where ${entity[3..6]?uncap_first}Name=${entity[3..6]?uncap_first}Name
